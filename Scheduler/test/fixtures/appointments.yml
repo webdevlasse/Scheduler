@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  instructor: MyString
+  start_time: 2013-01-18 14:55:08
+  end_time: 2013-01-18 14:55:08
+
+two:
+  instructor: MyString
+  start_time: 2013-01-18 14:55:08
+  end_time: 2013-01-18 14:55:08
