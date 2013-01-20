@@ -1,0 +1,20 @@
+%h1 Appointments
+= debug params
+
+#new-post-modal{'class' => 'modal hide fade'}
+  = form_for(Appointment.new, validate: true, remote: true, html: {"data-type" => :json}) do |f|
+    %ul.errors
+      %li
+    .field
+      = f.label :instructor
+      = f.select (:instructor, [['Mandy Christiansen', 1], ['Carrie Koester', 2]], 2)
+      .field
+        = f.label :start_time
+        = f.datetime_select :start_time
+      .field
+        = f.label :end_time
+        = f.datetime_select :end_time
+    .actions
+      = f.submit 'Save'
+
+%a{'href' => '#new-appointment-modal', 'data-toggle' => 'modal'}
