@@ -1,4 +1,6 @@
 Scheduler::Application.routes.draw do
+  resources :instructors
+
   resources :appointments
 
   # The priority is based upon order of creation:
