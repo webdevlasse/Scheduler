@@ -7,4 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 instructor = Instructor.create :name => "Lasse", :bio => "I am a great instructor", :specialties => "Coding Squats"
-Appointment.create :instructor_id => instructor.id, :start_time => "9 am", :end_time => "10 am"
+Appointment.create :instructor_id => instructor.id, :start_time => "9 am", :duration => 15
