@@ -1,5 +1,5 @@
 class Appointment < ActiveRecord::Base
-  attr_accessible :end_time, :instructor, :start_time
+  attr_accessible :end_time, :instructor_id, :start_time
   belongs_to :instructor
 
 
