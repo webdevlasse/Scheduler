@@ -3,6 +3,15 @@ class InstructorsController < ApplicationController
     @instructors = Instructor.all
   end
 
+  def show
+    @instructor = Instructor.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @instructor }
+    end
+  end
+
   def new
     @instructor = Instructor.new
       respond_to do |format|

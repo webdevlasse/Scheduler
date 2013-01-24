@@ -12,6 +12,14 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.new(params[:appointment])
   end
 
+  def new
+    @appointment = Appointment.new
+      respond_to do |format|
+        format.html
+        format.json {render json: @appointment}
+      end
+  end
+
   def destroy
     @appointment = Appointment.find(params[:id])
     @appintment.destroy

@@ -11,7 +11,11 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require datepair.js
 //= require jquery_ujs
+//= require jquery-ui
 //= require_tree .
 //= require rails.validations
+//= require jquery.timepicker.js
+
 

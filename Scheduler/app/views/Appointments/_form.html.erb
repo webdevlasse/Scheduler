@@ -1,2 +1,33 @@
-<h1>Make a new Appointment</h1>
+<%= form_for(@appointment) do |f| %>
+  <% if @appointment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@appointment.errors.count, "error") %> prohibited this appointment from being saved:</h2>
 
+      <ul>
+      <% @appointment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :instructor %><br />
+    <%= collection_select(:instructor, :instructor_id, Instructor.all, :id, :name) %>
+
+
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= f.text_field :start_time, :id => 'startTime' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :end_time %><br />
+    <%= f.text_field :end_time, :id  => 'endTime' %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
