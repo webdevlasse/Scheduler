@@ -12,7 +12,7 @@
 
 <% @appointments.each do |appointment| %>
   <tr>
-    <td><%= appointment.instructor %></td>
+    <td><%= appointment.instructor.name %></td>
     <td><%= appointment.start_time %></td>
     <td><%= appointment.end_time %></td>
     <td><%= link_to 'Show', appointment %></td>
