@@ -1,10 +1,10 @@
 class Appointment < ActiveRecord::Base
-  attr_accessible :end_time, :instructor_id, :start_time
+  attr_accessible :duration, :instructor_id, :start_time
   belongs_to :instructor
 
 
-  def duration
-    @end_time - @start_time
+  def end_time
+    start_time + duration.minutes
   end
 
 

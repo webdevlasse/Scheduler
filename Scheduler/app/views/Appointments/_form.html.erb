@@ -22,8 +22,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :end_time %><br />
-    <%= f.text_field :end_time, :id  => 'endTime' %>
+    <%= f.label :duration %><br />
+    <%= f.select :duration, convert_mins_to_hours %>
   </div>
 
   <div class="actions">
