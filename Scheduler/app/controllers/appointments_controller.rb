@@ -2,6 +2,7 @@ class AppointmentsController < ApplicationController
 
   def index
     @appointments = Appointment.all
+    @instructors = Instructor.scoped.includes(:appointments)
   end
 
   def show

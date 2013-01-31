@@ -20,4 +20,14 @@ module AppointmentsHelper
       [label, mins]
     end
   end
+
+  def time_array
+    t = Time.now
+    first_appt = Time.new t.year, t.month, t.day, 7
+    full_time_array = [first_appt]
+    55.times do
+      full_time_array << full_time_array.last + 15.minutes
+    end
+    full_time_array
+  end
 end
