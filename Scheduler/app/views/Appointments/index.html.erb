@@ -10,18 +10,37 @@
     <th></th>
   </tr>
 
-<% @appointments.each do |appointment| %>
-  <tr>
-    <td><%= appointment.instructor.name %></td>
-    <td><%= appointment.start_time %></td>
-    <td><%= appointment.end_time %></td>
-    <td><%= link_to 'Show', appointment %></td>
-    <td><%= link_to 'Edit', edit_appointment_path(appointment) %></td>
-    <td><%= link_to 'Destroy', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <% @appointments.each do |appointment| %>
+    <tr>
+      <td><%= appointment.instructor.name %></td>
+      <td><%= appointment.start_time %></td>
+      <td><%= appointment.end_time %></td>
+      <td><%= link_to 'Show', appointment %></td>
+      <td><%= link_to 'Edit', edit_appointment_path(appointment) %></td>
+      <td><%= link_to 'Destroy', appointment, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
+
+<table>
+  <tr>
+    <th>Times</th>
+    <% @instructors.each do |instructor| %>
+      <th><%= instructor.name %></th>
+    <% end %>
+  </tr>
+
+  <% time_array.each do |time| %>
+    <tr>
+      <td><%= "#{time.strftime('%l:%M %P')}"%> </td>
+      <% @instructors.each do |instructor| %>
+        <%# instructor.appointments.first.try(:start_time) %>
+        <td>is this reserved for <%= instructor.name %>?</td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
 
 <%= link_to 'New Appointment', new_appointment_path %>

@@ -1,4 +1,6 @@
 Scheduler::Application.routes.draw do
+  root :to => 'appointments#index'
+
   resources :instructors
 
   resources :appointments
