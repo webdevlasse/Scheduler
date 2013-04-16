@@ -10,8 +10,7 @@ In place editing
 
 make it a one page app
 
-Change directory structure to only have one parent folder named Scheduler
-
+[x] - Change directory structure to only have one parent folder named Scheduler
 
 
 
