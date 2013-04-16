@@ -1,8 +1,8 @@
 Scheduler
 =========
 ToDo
-- [ ] Create specialties (specialties has_one app_type, instructors have_many specialties, appts have_one specialty)
-- [ ] Create appt types (appt types have_many specialties)
+- [x] Create specialties (specialties has_one app_type, instructors have_many specialties, appts have_one specialty)
+- [x] Create appt types (appt types have_many specialties)
 - [ ] Appt user interface
 - [ ] Allow a comment when making an appt
 - [ ] Create way to make appt by time.
