@@ -2,6 +2,8 @@ Scheduler
 =========
 ToDo
 
+[] - User authentication
+
 Create way to make appt by time.
 
 Layout class schedule

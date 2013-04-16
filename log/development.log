@@ -4511,3 +4511,1970 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-23 21:18:30
 Served asset /application.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:14:21 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.2ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (51.6ms)
+Compiled jquery.js  (2ms)  (pid 29271)
+Compiled jquery_ujs.js  (0ms)  (pid 29271)
+Compiled jquery-ui.js  (23ms)  (pid 29271)
+Compiled rails.validations.js  (0ms)  (pid 29271)
+Compiled application.js  (104ms)  (pid 29271)
+Completed 200 OK in 239ms (Views: 197.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:14:21 -0700
+Served asset /jquery.timepicker.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:14:21 -0700
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /appointments.css - 200 OK (1ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /instructors.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /datepair.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /jquery-ui.js - 200 OK (5ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /appointments.js - 200 OK (1ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /create.js - 200 OK (1ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /instructors.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /jquery.timepicker.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /rails.validations.js - 200 OK (22ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:14:22 -0700
+Served asset /application.js - 200 OK (12ms)
+
+
+Started GET "/appointments/new" for 127.0.0.1 at 2013-04-15 19:15:12 -0700
+Processing by AppointmentsController#new as HTML
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  Rendered appointments/_form.html.erb (6.6ms)
+  Rendered appointments/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:15:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:15:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:15:12 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:15:12 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/appointments" for 127.0.0.1 at 2013-04-15 19:15:17 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" 
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1[0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" 
+  [1m[36mAppointment Load (0.2ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)[0m
+  Rendered appointments/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:15:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:15:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:15:17 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:15:17 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/appointments/1" for 127.0.0.1 at 2013-04-15 19:15:20 -0700
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template appointments/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/bwillis/dev/sandbox/Scheduler/app/views"
+  * "/Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/twitter-bootstrap-rails-2.1.6/app/views"
+):
+  actionpack (3.2.8) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.8) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__4450446774568112459__process_action__1639943494956930296__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  client_side_validations (3.2.1) lib/client_side_validations/middleware.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2958808662835432870__call__3920180428392243527__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/appointments/1/edit" for 127.0.0.1 at 2013-04-15 19:15:24 -0700
+
+AbstractController::ActionNotFound (The action 'edit' could not be found for AppointmentsController):
+  actionpack (3.2.8) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  client_side_validations (3.2.1) lib/client_side_validations/middleware.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2958808662835432870__call__3920180428392243527__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/instructors" for 127.0.0.1 at 2013-04-15 19:16:45 -0700
+Processing by InstructorsController#index as HTML
+  [1m[36mInstructor Load (0.2ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  Rendered instructors/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:46 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:46 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/instructors/1" for 127.0.0.1 at 2013-04-15 19:16:52 -0700
+Processing by InstructorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mInstructor Load (0.2ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered instructors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:52 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:52 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:16:52 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:17:11 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:17:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:17:11 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:17:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:17:11 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:17:11 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAppointments (20130118225508)
+Migrating to CreateInstructors (20130121211905)
+Migrating to CreateAssociationForAppointmentAndInstructor (20130124032226)
+Migrating to ChangeEndTimeToDuration (20130124040108)
+Migrating to DeviseCreateUsers (20130416022226)
+  [1m[35m (2.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130416022226')
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("appointments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("instructors")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 142ms (Views: 102.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /appointments.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /instructors.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /datepair.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /jquery-ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /appointments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /create.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /instructors.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /rails.validations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:22 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:23:47 -0700
+Processing by AppointmentsController#index as HTML
+Completed 401 Unauthorized in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-15 19:23:47 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 31ms (Views: 18.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /appointments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /create.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:23:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-15 19:24:03 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /appointments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /instructors.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /instructors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:04 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QGqXOChCr5TToW+/ufn+f9cvp7Iz7BKkMvblKH3DZa8=", "user"=>{"email"=>"me@ben.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'me@ben.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 108ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /appointments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /instructors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:11 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QGqXOChCr5TToW+/ufn+f9cvp7Iz7BKkMvblKH3DZa8=", "user"=>{"email"=>"me@ben.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'me@ben.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 16 Apr 2013 02:24:33 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "me@ben.com"], ["encrypted_password", "$2a$10$PtmDRcV3IEajioXaSYWMwuvBAk8Rte7SDXsXOwUvbsecAtcZqZMKi"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Tue, 16 Apr 2013 02:24:33 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-16 02:24:33.811605', "current_sign_in_at" = '2013-04-16 02:24:33.811605', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-16 02:24:33.812242' WHERE "users"."id" = 1[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 89ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAppointment Load (0.1ms)[0m  SELECT "appointments".* FROM "appointments" 
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1[0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" 
+  [1m[36mAppointment Load (0.2ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)[0m
+  Rendered appointments/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 35ms (Views: 21.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /appointments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:33 -0700
+Served asset /create.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:34 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:34 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:34 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:34 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /instructors.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /create.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:24:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAppointment Load (0.1ms)[0m  SELECT "appointments".* FROM "appointments" 
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1[0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" 
+  [1m[36mAppointment Load (0.2ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)[0m
+  Rendered appointments/index.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 169ms (Views: 103.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /appointments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /jquery.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /instructors.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /datepair.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /appointments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /instructors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /create.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /rails.validations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:26:36 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-04-15 19:26:40 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-04-15 19:27:58 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /datepair.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /appointments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /instructors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:00 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAppointment Load (0.1ms)[0m  SELECT "appointments".* FROM "appointments" 
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1[0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" 
+  [1m[36mAppointment Load (0.2ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)[0m
+  Rendered appointments/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /appointments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /appointments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /instructors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:08 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_out?_method=delete" for 127.0.0.1 at 2013-04-15 19:28:10 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/sign_out?_method=delete" for 127.0.0.1 at 2013-04-15 19:28:27 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /appointments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:28 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:28:29 -0700
+Served asset /application.js - 304 Not Modified (29ms)
+
+
+Started GET "/users/sign_out?method=delete" for 127.0.0.1 at 2013-04-15 19:28:30 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/sign_out?method=delete" for 127.0.0.1 at 2013-04-15 19:30:18 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAppointment Load (0.1ms)[0m  SELECT "appointments".* FROM "appointments" 
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1[0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" 
+  [1m[36mAppointment Load (0.2ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)[0m
+  Rendered appointments/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /appointments.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /instructors.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /datepair.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_out?method=delete" for 127.0.0.1 at 2013-04-15 19:30:36 -0700
+
+ActionController::RoutingError (No route matches [POST] "/users/sign_out"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bwillis/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bwillis/.rvm/gems/ruby-1.9.3-p194@scheduler/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /instructors.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /instructors.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:51 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QGqXOChCr5TToW+/ufn+f9cvp7Iz7BKkMvblKH3DZa8="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Processing by AppointmentsController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /appointments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /create.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:30:58 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n6VWNybCUB2n4LO/DEI8kOCxae2X6so9ojzaB+dohfM=", "user"=>{"email"=>"me@ben.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'me@ben.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2013-04-16 02:31:21.473785', "sign_in_count" = 2, "updated_at" = '2013-04-16 02:31:21.474394' WHERE "users"."id" = 1
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 92ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /appointments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAppointment Load (0.1ms)[0m  SELECT "appointments".* FROM "appointments" 
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1[0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" 
+  [1m[36mAppointment Load (0.2ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)[0m
+  Rendered appointments/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /appointments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /instructors.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:23 -0700
+Served asset /application.js - 304 Not Modified (27ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"n6VWNybCUB2n4LO/DEI8kOCxae2X6so9ojzaB+dohfM="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Processing by AppointmentsController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /appointments.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:33 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.2ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 62ms (Views: 49.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /appointments.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /instructors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:31:58 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.2ms)[0m  [1mSELECT "appointments".* FROM "appointments" [0m
+  [1m[35mInstructor Load (0.1ms)[0m  SELECT "instructors".* FROM "instructors" WHERE "instructors"."id" = 1 LIMIT 1
+  [1m[36mInstructor Load (0.1ms)[0m  [1mSELECT "instructors".* FROM "instructors" [0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."instructor_id" IN (1)
+  Rendered appointments/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /datepair.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /create.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /instructors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:03 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 19:32:04 -0700
+Processing by AppointmentsController#index as HTML
+Completed 401 Unauthorized in 9ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 25ms (Views: 14.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /appointments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /datepair.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:05 -0700
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/instructors" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Processing by InstructorsController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.timepicker.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /jquery.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /instructors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.css?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /appointments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepair.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /datepair.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/appointments.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /appointments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /create.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/instructors.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:09 -0700
+Served asset /instructors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.timepicker.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:10 -0700
+Served asset /jquery.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:10 -0700
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-15 19:32:10 -0700
+Served asset /application.js - 304 Not Modified (1ms)
